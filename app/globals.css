@@ -2,14 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* box-sizing: border-box; */
+  max-width: 100%;
+  margin: auto;
+}
 /* nav styles */
 nav {
+  background: rgba(246, 186, 144, 0.904);
+
   @apply
     pb-4
     border-b-2 border-gray-200
     flex items-center gap-5 
-    my-2 mx-auto 
-    max-w-5xl;
+    py-2 mx-auto;
+    /* max-w-5xl; */
 }
 nav a {
   @apply text-gray-500;
@@ -17,23 +24,37 @@ nav a {
 nav a:hover {
   @apply text-black;
 }
+.nav-button {
+  @apply  
+  rounded-full py-2 px-4
+  ring-2 ring-red-300;
+}
+/**********************************************************/
 
 #comp1 {
-  background: rgba(246, 186, 144, 0.904)
+  background: rgba(246, 186, 144, 0.904);
+  @apply py-8;
 }
 .landing {
   align-items: center;
-  width: 50%;
+  width: 40%;
+}
+.topic {
+  @apply
+  text-5xl text-center font-serif
 }
 .box {
   @apply
-  border-2
-  block max-w-sm p-6 border border-gray-200 rounded-lg shadow
+  block p-6 bg-white 
+  border border-gray-200 rounded-xl
+  shadow hover:bg-gray-100;
 }
 .button {
-  @apply
-  flex
-  gap-5
+  align-items: center;
+  @apply max-w-5xl
+  border-red-200 border-solid
+  
+  flex gap-5
 }
 
 #comp2 {

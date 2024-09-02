@@ -1,3 +1,5 @@
+'use client'
+
 import Component1 from "./component/component1";
 import Component2 from "./component/component2";
 import Component3 from "./component/component3";

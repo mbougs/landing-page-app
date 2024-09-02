@@ -1,6 +1,6 @@
 export default function Component4() {
   return (
-    <main id="comp4">
+    <div id="comp4">
     <h1>Our Products</h1>
         <div className="grid grid-cols-3 gap-6">
             <section>
@@ -33,6 +33,6 @@ export default function Component4() {
         <div className="two">
             <p>Carousel</p>
         </div>
-    </main>
+    </div>
   )
 }

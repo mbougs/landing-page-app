@@ -1,6 +1,6 @@
 export default function Component2() {
   return (
-    <main id="comp2">
+    <div id="comp2">
         <div className="comp2-header">
             <h1>Grow your Impact</h1>
             <button>Fix firmware1</button>
@@ -40,6 +40,6 @@ export default function Component2() {
             <p>Apply to pots</p>
           </section>
         </div>
-    </main>
+    </div>
   )
 }

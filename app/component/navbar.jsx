@@ -12,12 +12,12 @@ export default function Navbar() {
         quality={100}
         placeholder='blur' />
         <h1>POTLOCK</h1>
-        <Link href="#">Link 1</Link>
-        <Link href="#">Link 2</Link>
-        <Link href="#">Link 3</Link>
-        <Link href="#">Link 4</Link>
-        <Link href="#">Link 5</Link>
-        <Link href="#"><span className='pill'>Launch App</span></Link>
+        <Link href="#">For Projects/Anyone</Link>
+        <Link href="#">For Funders</Link>
+        <Link href="#">Our Products</Link>
+        <Link href="#">Testimonials</Link>
+        <Link href="#">AI-PGF</Link>
+        <Link href="#"><span className="nav-button">Launch App</span></Link>
      </nav>
   )
 }

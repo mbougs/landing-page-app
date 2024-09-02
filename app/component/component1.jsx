@@ -1,14 +1,16 @@
+import Link from "next/link";
+
 export default function Component1() {
   return (
-    <main id="comp1">
+    <div id="comp1">
         <div className="landing topic">
             <h1>The Free, Open Funding Stack for Public Goods.</h1>
         </div>
         <div className="landing box">
-            <p className="my-3">Build open source end to end build for anything to create their main funding solution</p>
+            <p className="my-3">Build open source end to end tools for anyone to create their own funding solution.</p>
             <div className="button">
-                <button className="flex">On Stream</button>
-                <button>Learn More</button>
+                <Link href="#"><span className="button get-start">Get Started</span></Link>
+                <Link href="#"><span className="button learn-more">Learn More</span></Link>
             </div>
             <div className="box">
                 Lorem ipsum dolor islet Lorem ipsum dolor islet Lorem ipsum dolor islet Lorem ipsum dolor islet
@@ -27,6 +29,6 @@ export default function Component1() {
             <span>9</span>
             <span>10</span>
         </div>
-    </main>
+    </div>
   )
 }
