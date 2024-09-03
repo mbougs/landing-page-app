@@ -36,8 +36,8 @@ export default function Component1() {
         </h4>
         <div className="partners">
         {
-            logos.map((logo) => (
-                <span>
+            logos.map((logo, id) => (
+                <span key={id}>
             <Image
             src={logo}
             width={50}
@@ -49,8 +49,8 @@ export default function Component1() {
         <span><Image src={logo2} width={50} alt="logo" /></span>
         <span><Image src={logo3} width={50} alt="logo" /></span>
         {
-         logos.map((logo) => (
-            <span>
+         logos.map((logo, id) => (
+            <span key={id}>
             <Image
             src={logo}
             width={50}
