@@ -3,12 +3,9 @@
 @tailwind utilities;
 
 * {
-  /* box-sizing: border-box; */
-  max-width: 100%;
+  /* box-sizing: border-box;
+  max-width: 100%; */
   margin: auto;
-}
-html {
-  
 }
 /* nav styles */
 nav {
@@ -110,6 +107,7 @@ nav {
 }
 .comp2-header button {
   @apply
+  mb-3
   float-right;
 }
 .projects {
@@ -135,21 +133,156 @@ nav {
 #comp2 section {
   word-wrap: break-word;
   @apply
-  border-2 border-red-200
+  block max-w-sm p-6
+  border border-gray-200
+  rounded-lg;
+}
+#comp2 span {
+  float: right;
+  @apply
+  bg-red-500
+  text-white text-xs font-semibold
+  me-2 px-2.5 py-0.5
+  rounded-full;
 }
 /****************************************************/
 
 #comp3 {
-  background-color: rgba(204, 229, 221, 0.877);
+  background-color: rgba(204, 229, 221, 0.235);
   @apply p-8
 }
-#comp3 div {
+#comp3 .centered {
+  justify-content: center;
   @apply
-  border-2 border-black
-  items-center
+  pt-3
+  grid border-2 border-black rounded-3xl;
 }
-
+.text {
+  @apply
+  text-center
+  my-3
+}
+.toyo {
+  box-shadow: 1px 2px black;
+  @apply
+  px-3 py-2 mb-10
+  border border-solid border-black 
+  rounded-lg;
+}
+/*******************************************************/
 
 #comp4 {
   background-color: rgba(239, 167, 239, 0.473);
+}
+#comp4 h1 {
+  @apply
+  font-serif text-violet-800 font-bold text-2xl
+  pl-3 pt-4
+}
+.products {
+  @apply
+  grid grid-cols-3
+}
+.products section {
+  width: 25rem;
+  border: 1px solid blue;
+}
+.comp4-subtitle {
+  position: relative;
+}
+#comp4 .badge {
+  float: right;
+  position: sticky;
+  @apply
+  text-xs font-semibold text-nowrap
+  rounded-full;
+}
+.new {
+  @apply
+  bg-red-500
+  text-white 
+  me-2 px-5 py-2
+}
+.coming-soon {
+  @apply
+  /* bg-orange-300 */
+  /* text-black outline-black */
+  me-2 px-10 py-2.5;
+}
+/*****************************************************/
+.subscribe {
+  @apply
+  mx-auto my-24
+  py-4 w-4/12
+  grid justify-items-center
+  border border-gray-300 rounded-3xl;
+}
+.subscribe h3 {
+  @apply
+  mb-2 text-2xl
+  font-serif font-bold;
+}
+form > input, form > button {
+  @apply
+  border-2 shadow-lg shadow-gray-500/80
+  rounded-lg px-2;
+}
+form input {
+  @apply
+  w-96 h-11
+}
+form button {
+  margin-left: -6.5rem;
+  @apply
+  text-white
+  bg-black/80
+}
+/*****************/ /*****************/
+.sides {
+  @apply
+  py-6
+  grid grid-cols-2
+  border border-gray-500;
+}
+.side-1 {
+  @apply
+  ml-4 w-6/12;
+}
+.side-2 {
+  @apply
+  text-sm
+  grid grid-cols-4
+  gap-x-8 content-start
+  border border-gray-500;
+}
+.side-2 h6 {
+  @apply
+  font-bold;
+}
+/**********************/ /********/
+.footer-items {
+  @apply 
+  my-6 pt-5 mx-4 h-20
+  border-t-2 border-gray-300
+}
+.footer-items1 {
+  @apply
+  float-left
+}
+.footer-items2 {
+  @apply
+  float-right
+}
+.footer-icons {
+  @apply
+  px-2
+  bg-gray-200
+  space-x-3
+}
+.footer-items2 a {
+  @apply
+  text-sm rounded-md
+  ml-4 py-1 px-2
+  border border-gray-400
+  shadow-gray-500/50 shadow-lg;
 }
