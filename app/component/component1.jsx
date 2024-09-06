@@ -22,7 +22,12 @@ export default function Component1() {
                 <Link href="#"><span className="btn learn-more">Learn More</span></Link>
             </div>
             <div className="inner-box">
-                <p>### 200+ Active Projects ### $172,473.35 donations</p>
+                <p>
+                <span className="sm-circle z-0">#</span>
+                <span className="sm-circle z-10">#</span>
+                <span className="sm-circle z-20">#</span>
+                <span className="sm-circle z-30">#</span>
+                     200+ Active Projects ### $172,473.35 donations</p>
                 <p>### 1,100 Unique donors</p>
             </div>
         </div>

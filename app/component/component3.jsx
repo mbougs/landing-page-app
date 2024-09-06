@@ -9,13 +9,13 @@ export default function Component3() {
             <Image src={logo}
             width={120}
             alt="logo"/>
-            <div className="text">
+            <div className="info">
               <h2>AI/Powered/</h2>
               <h2>Public Goods Funding</h2>
               <p>A Proactive Grants Program and Movement to build</p>
               <p>towards a <strong>Funding AGR</strong></p>
             </div>
-            <button className="toyo">Learn More</button>
+            <button className="learn-more">Learn More</button>
         </div>
     </div>
     </>
